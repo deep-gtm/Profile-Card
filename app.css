@@ -1,0 +1,151 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-bubble {
+    position: absolute;
+    width: 50%;
+    height: 65%;
+    top: 0;
+    right: 50%;
+    object-fit: none;
+    object-position: 100% 100%;
+    z-index: 0;
+}
+
+.bottom-bubble {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 50%;
+    top: 50%;
+    object-fit: none;
+    object-position: 0 0;
+}
+
+.card {
+    background-color: white;
+    z-index: 0;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+}
+
+.card-pattern {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    width: 100%;
+}
+
+.victor {
+    border-radius: 50%;
+    width: 30%;
+    margin-top: -16%;
+    border: 5px solid white;
+}
+
+.card-footer {
+    border-top: 1px solid hsl(0, 0%, 59%);
+    padding: 20px 0;
+    width: 98%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.count {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.count-info {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    font-size: 14px;
+}
+
+.social-info {
+    line-height: 1.5;
+}
+
+.info {
+    padding: 20px 0;
+    line-height: 1.5;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.age {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    padding-left: 5px;
+}
+
+.location {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 80%;
+    }
+}
